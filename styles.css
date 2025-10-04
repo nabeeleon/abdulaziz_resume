@@ -975,6 +975,28 @@ section {
     font-size: 1.1rem;
 }
 
+.project-grade {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: var(--shadow-medium);
+    transition: all 0.3s ease;
+}
+
+.project-grade:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-large);
+}
+
+.project-grade i {
+    font-size: 1.1rem;
+}
+
 .project-description {
     margin-bottom: 2rem;
 }
