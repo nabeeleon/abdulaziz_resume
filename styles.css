@@ -420,6 +420,14 @@ section {
     background: var(--bg-secondary);
 }
 
+.about-text {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.about-image {
+    animation: slideInRight 0.8s ease-out 0.4s both;
+}
+
 .about-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -431,18 +439,25 @@ section {
     font-size: 1.8rem;
     color: var(--text-primary);
     margin-bottom: 1.5rem;
+    animation: slideInUp 0.8s ease-out 0.2s both;
 }
 
 .about-text p {
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    animation: slideInUp 0.8s ease-out 0.4s both;
+}
+
+.about-text p:nth-child(3) {
+    animation: slideInUp 0.8s ease-out 0.6s both;
 }
 
 .about-stats {
     display: flex;
     gap: 2rem;
     margin-top: 2rem;
+    animation: slideInUp 0.8s ease-out 0.8s both;
 }
 
 .stat {

@@ -119,7 +119,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Add fade-in class to elements that should animate
-    const animateElements = document.querySelectorAll('.skill-category, .cert-card, .timeline-item, .contact-item, .reference-card');
+    const animateElements = document.querySelectorAll('.skill-category, .cert-card, .timeline-item, .contact-item, .reference-card, .about-text, .about-image');
     animateElements.forEach(el => {
         el.classList.add('fade-in');
         observer.observe(el);
