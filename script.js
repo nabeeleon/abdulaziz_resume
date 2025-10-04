@@ -339,6 +339,27 @@ function initScrollProgress() {
 // Initialize scroll progress
 initScrollProgress();
 
+// Animated skill level bars
+function initSkillLevelBars() {
+    const levelBars = document.querySelectorAll('.level-fill');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const level = entry.target.getAttribute('data-level');
+                entry.target.style.width = level + '%';
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    levelBars.forEach(bar => {
+        observer.observe(bar);
+    });
+}
+
+// Initialize skill level bars
+initSkillLevelBars();
+
 // Particle effect for hero section
 function initParticleEffect() {
     const hero = document.querySelector('.hero');
